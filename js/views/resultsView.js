@@ -26,7 +26,9 @@ class resultsView {
             .map((country, i) => {
               return `
             <div class="card" data-num="${i}">
-                <img src="${country.flags.png}" class="card__img" />
+                <img src="${country.flags.png}" class="card__img" alt="${
+                country.name.official
+              } flag"/>
                 <div class="card__content">
                     <h1 class="card__heading">${country.name.official}</h1>
                     <p class="card__paragraph card__population">
