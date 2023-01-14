@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.scss" />
+
+    <title>REST countries</title>
+
+    <script type="module" src="js/controller.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <nav class="header__nav">
+          <div class="header__nav--logo">Where in the world?</div>
+          <div class="header__nav--mode" data-mode="light">
+            <svg
+              class="header__nav--mode-icon"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="
+                #111"
+                fill="#fff"
+                d="M13.719 1.8c0.686 0.385 1.332 0.867 1.916 1.449 3.42 3.422 3.42 8.966 0 12.386s-8.965 3.42-12.386 0c-0.583-0.584-1.065-1.231-1.449-1.916 3.335 1.867 7.633 1.387 10.469-1.449s3.318-7.134 1.45-10.47z"
+              ></path>
+            </svg>
+
+            <span class="header__nav--mode-span">Dark Mode</span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- MAIN FORM -->
+        <form class="main__form">
+          <!-- FORM INPUT -->
+          <div class="main__form--item main__form--item-input">
+            <input
+              placeholder="Search for a country"
+              type="text"
+              class="main__form--input"
+            />
+            <label class="main__form--label">
+              <svg
+                class="main__form--label-icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M17.545 15.467l-3.779-3.779c0.57-0.935 0.898-2.035 0.898-3.21 0-3.417-2.961-6.377-6.378-6.377s-6.186 2.769-6.186 6.186c0 3.416 2.961 6.377 6.377 6.377 1.137 0 2.2-0.309 3.115-0.844l3.799 3.801c0.372 0.371 0.975 0.371 1.346 0l0.943-0.943c0.371-0.371 0.236-0.84-0.135-1.211zM4.004 8.287c0-2.366 1.917-4.283 4.282-4.283s4.474 2.107 4.474 4.474c0 2.365-1.918 4.283-4.283 4.283s-4.473-2.109-4.473-4.474z"
+                ></path>
+              </svg>
+            </label>
+          </div>
+
+          <!-- FORM SELECT -->
+          <div class="main__form--item main__form--select">
+            Filter by region
+
+            <svg
+              class="main__form--select-icon"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M13.418 7.859c0.271-0.268 0.709-0.268 0.978 0s0.272 0.701 0 0.969l-3.908 3.83c-0.27 0.268-0.707 0.268-0.979 0l-3.908-3.83c-0.27-0.267-0.27-0.701 0-0.969s0.709-0.268 0.978 0l3.421 3.141 3.418-3.141z"
+              ></path>
+            </svg>
+
+            <ul class="select-menu hidden" data-shown="false">
+              <li class="select-menu__item">Africa</li>
+              <li class="select-menu__item">Americas</li>
+              <li class="select-menu__item">Asia</li>
+              <li class="select-menu__item">Europe</li>
+              <li class="select-menu__item">Oceania</li>
+            </ul>
+          </div>
+
+          <!-- <input type="submit" class="main__form--submit" /> -->
+        </form>
+
+        <!-- MAIN CONTENT -->
+        <div class="main__content">
+          <!-- CARD -->
+
+          <!-- <div class="card">
+            <img src="./SVG/moon.svg" class="card__img" />
+            <div class="card__content">
+              <h1 class="card__heading">Germany</h1>
+              <p class="card__paragraph card__population">
+                Population:
+                <span class="card__population--number">81,770,900</span>
+              </p>
+
+              <p class="card__paragraph card__region">
+                Region:
+                <span class="card__region--number">Europe</span>
+              </p>
+
+              <p class="card__paragraph card__capital">
+                Capital:
+                <span class="card__capital--number">Berlin</span>
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

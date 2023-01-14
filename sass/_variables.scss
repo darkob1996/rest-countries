@@ -1,0 +1,25 @@
+// COLORS
+$dark-blue: hsl(208, 23%, 22%); // (Dark Mode Elements)
+$very-dark-blue: hsl(207, 26%, 17%); // (Dark Mode Background)
+$very-dark-blue: hsl(200, 15%, 8%); // (Light Mode Text)
+$dark-gray: rgb(133, 133, 133); // (Light Mode Input)
+$very-light-gray: rgb(250, 250, 250); // (Light Mode Background)
+$white: hsl(0, 0%, 100%); // (Dark Mode Text & Light Mode Elements)
+
+// FONTS
+$font-homepage: 1.4rem;
+$font-details: 1.6rem;
+$font-family: "Nunito Sans", sans-serif;
+$font-weight-light: 300;
+$font-weight-normal: 600;
+$font-weight-bold: 800;
+
+// BREAKPOINTS
+$bp-1100: 68.75em;
+$bp-1000: 62.5em;
+$bp-800: 50em;
+$bp-750: 46.875em;
+$bp-700: 43.75em;
+$bp-600: 37.5em;
+$bp-500: 31.25em;
+$bp-375: 23.5em;

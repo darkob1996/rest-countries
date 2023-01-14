@@ -1,0 +1,51 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-1000) {
+    font-size: 56.25%;
+  }
+}
+
+html[data-mode="light"] {
+  --text: hsl(200, 15%, 8%);
+  --background: rgb(250, 250, 250);
+  --elements: hsl(0, 0%, 100%);
+}
+
+html[data-mode="dark"] {
+  --text: hsl(0, 0%, 100%);
+  --background: hsl(207, 26%, 17%);
+  --elements: hsl(208, 23%, 22%);
+}
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight-normal;
+  background-color: var(--background);
+}
+
+.header {
+  grid-column: full-start / full-end;
+  background-color: var(--elements);
+  box-shadow: 0 0.4rem 0.2rem -0.2rem rgba(133, 133, 133, 0.1);
+
+  display: grid;
+  grid-template-columns: minmax(3rem, 5%) 1fr minmax(3rem, 5%);
+}
+
+.main {
+  grid-column: content-start / content-end;
+
+  padding-block: 4rem;
+}
